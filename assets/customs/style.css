@@ -38,6 +38,6 @@ body {
 
 .control::before {
   content: "";
-  position: absolute;
-  right: 1rem;
+  position: absolute !important;
+  right: 1rem !important;
 }
