@@ -36,8 +36,3 @@ body {
   margin-top: 0 !important;
 }
 
-.control::before {
-  content: "";
-  position: absolute !important;
-  right: 1rem !important;
-}
