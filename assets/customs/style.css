@@ -1,5 +1,5 @@
-body{
-    font-family: 'Tajawal', sans-serif  !important;
+body {
+  font-family: "Tajawal", sans-serif !important;
 }
 .page-header.navbar .page-logo {
   float: right;
@@ -28,7 +28,10 @@ body{
   margin: 0 !important;
 }
 
+.FontFamilyTajawal {
+  font-family: "Tajawal", sans-serif !important;
+}
 
-.FontFamilyTajawal{
-    font-family: 'Tajawal', sans-serif  !important;
+#sample_2_filter {
+  margin-top: 0 !important;
 }
