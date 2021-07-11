@@ -32,7 +32,8 @@ body {
   font-family: "Tajawal", sans-serif !important;
 }
 
-#sample_2_filter {
+#sample_2_filter,
+#sample_1_length {
   margin-top: 0 !important;
 }
 
