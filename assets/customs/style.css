@@ -33,7 +33,8 @@ body {
 }
 
 #sample_2_filter,
-#sample_1_length {
+#sample_1_length,
+#sample_1_filter {
   margin-top: 0 !important;
 }
 
