@@ -37,5 +37,5 @@ body {
 }
 
 #sample_1_wrapper .dt-buttons {
-  display: none;
+  display: none !important;
 }
