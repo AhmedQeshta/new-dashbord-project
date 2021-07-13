@@ -1,0 +1,165 @@
+body {
+  font-family: "Tajawal", sans-serif !important;
+  min-width: 350px;
+}
+
+.page-header.navbar .page-logo {
+  float: right;
+  width: 235px;
+  height: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.logo_label {
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+}
+
+.page-header.navbar .page-logo .logo-default {
+  margin: 0 !important;
+}
+
+.page-header.navbar .menu-toggler.sidebar-toggler {
+  float: left;
+  margin: 0 !important;
+}
+
+.FontFamilyTajawal {
+  font-family: "Tajawal", sans-serif !important;
+}
+
+
+.row .form__input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form__input .form__body {
+  display: flex;
+  width: 100%;
+
+}
+
+.form__input .form__body .form__group {
+  display: flex;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.form__input .form__body .form__group .control__header {
+  color: #0a325f;
+}
+
+
+.form__group .control__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  background-color: #0a325f;
+  padding: 12px 3px !important;
+  border-radius: 10px !important;
+  color: white;
+  text-align: center;
+}
+
+.form__group .form__control {
+  width: 65%;
+  font-size: 16px !important;
+}
+
+.form__group .form__control .input__Form {
+  width: 100%;
+  padding: 10px 8px !important;
+  border-radius: 10px !important;
+  margin-right: 5px;
+  font-size: 16px !important;
+}
+
+input[type="text"], textarea, input[type="file"], input[type="date"], select {
+  font-size: 16px !important;
+  /*padding: 5px !important;*/
+  outline: none;
+  border: 0;
+  box-shadow: 1px 1px 3px rgba(192, 192, 192, 0.95);
+  resize: none;
+}
+
+input[type="text"]:focus, textarea:focus, input[type="file"]:focus, input[type="date"]:focus, select:focus {
+  outline: none;
+  border: 0;
+  box-shadow: 1px 1px 3px rgba(192, 192, 192, 0.95);
+}
+
+.form__control {
+  position: relative;
+}
+
+.p_input__Form {
+  position: absolute;
+  left: 2px;
+  bottom: -12px;
+}
+
+
+/*btn__blue*/
+.btn__container {
+  margin: 0;
+}
+
+.btn__container .btn__blue {
+  padding: 5px 20px;
+  text-align: center;
+  border: 1px solid #0a325f !important;
+  border-radius: 10px !important;
+  background-color: transparent;
+  font-size: 16px;
+  transition: all ease 0.3s;
+}
+
+.btn__container .btn__blue:hover {
+  border: 1px solid transparent !important;
+  background-color: #0a325f;
+  color: white;
+}
+
+
+/*1040px*/
+@media (max-width: 1040px) {
+
+  .row .form__input {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .form__input .form__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 6px auto;
+  }
+
+  .form__input .form__body .form__group {
+    margin: 6px auto;
+  }
+
+  .btn__container {
+    margin: 0 auto;
+  }
+
+  .form__group .control__label {
+    width: 40%;
+    background-color: #0a325f;
+    font-size: 12px;
+  }
+}

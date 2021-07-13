@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8"/>
-  <title>Page 1 | Admin Dashboard</title>
+  <title>Page 2 | Admin Dashboard</title>
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <meta content="Preview page of Metronic Admin RTL Theme #1 for statistics, charts, recent events and reports"
@@ -46,7 +46,7 @@
   <!-- END THEME LAYOUT STYLES -->
 
 
-  <link href="assets/customs/style.css" rel="stylesheet">
+  <link href="assets/customs/style2.css" rel="stylesheet">
 </head>
 <!-- END HEAD -->
 
@@ -143,11 +143,10 @@
           <!-- END SIDEBAR TOGGLER BUTTON -->
           <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
 
-          <li class="nav-item start active open">
+          <li class="nav-item ">
             <a class="nav-link nav-toggle" href="#">
               <i class="fa fa-info-circle"></i>
               <span class="title">الأنشطة المعلقة</span>
-              <span class="selected"></span>
             </a>
           </li>
           <li class="nav-item  ">
@@ -192,10 +191,23 @@
               <span class="title">المنظمين</span>
             </a>
           </li>
-          <li class="nav-item  ">
+          <li class="nav-item">
             <a class="nav-link nav-toggle" href="#">
               <i class="fa fa-ticket"></i>
               <span class="title">التذاكر</span>
+            </a>
+          </li>
+          <li class="nav-item  start active open">
+            <a class="nav-link nav-toggle" href="#">
+              <i class="fa fa-ticket"></i>
+              <span class="title">اضافة نشاط</span>
+              <span class="selected"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-toggle" href="#">
+              <i class="fa fa-ticket"></i>
+              <span class="title">جدولة نشاط</span>
             </a>
           </li>
           <li class="nav-item  ">
@@ -243,14 +255,14 @@
               <i class="fa fa-circle"></i>
             </li>
             <li>
-              <span>الأنشطة المعلقة</span>
+              <span>إنشاء رحلة بتذاكر</span>
             </li>
           </ul>
           <div class="page-toolbar">
 
             <div class="pull-right tooltips btn btn-sm">
               <i class="icon-calendar"></i>&nbsp;
-              <span class="thin uppercase hidden-xs">السبت 10-7-2021</span>
+              <span class="thin uppercase hidden-xs">الثلاثاء 13-7-2021</span>
 
             </div>
           </div>
@@ -258,254 +270,178 @@
         <!-- END PAGE BAR -->
         <!-- BEGIN PAGE TITLE-->
         <h1 class="page-title FontFamilyTajawal">
-          الأنشطة المعلقة
+          إنشاء رحلة بتذاكر
         </h1>
         <!-- END PAGE TITLE-->
         <!-- END PAGE HEADER-->
+
+        <!--  body page 2 -->
         <div class="row">
-          <!-- <div class="col-md-12"> -->
-          <!-- BEGIN EXAMPLE TABLE PORTLET-->
-          <div class="portlet light bordered">
-            <div class="portlet-body">
-              <table class="table table-striped table-bordered table-hover dt-responsive" id="sample_1" width="100%">
-                <thead>
-                <tr>
-                  <th class="all">إسم المنظم</th>
-                  <th class="min-tablet">إسم النشاط</th>
-                  <th class="min-tablet">المدينة</th>
-                  <th class="desktop">رقم المنظم</th>
-                  <th class="desktop">نوع النشاط</th>
-                  <th class="desktop">تاريخ الإنشاء</th>
-                  <th class="all"></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>عبد العزيز</td>
-                  <td>كوفي</td>
-                  <td>الرياض</td>
-                  <td>221</td>
-                  <td>كافيهات و مطاعم</td>
-                  <td>2011/04/25 05:45:11 ص</td>
-                  <td>
-                    <div class="btn-group pull-right">
-                      <a class="btn green btn-xs btn-outline" href="javascript:;">
-                        <i class="fa fa-edit"></i> </a>
-                    </div>
-                  </td>
-                  <!-- <td>
-                      <div class="btn-group pull-right">
-                          <button class="btn green btn-xs btn-outline dropdown-toggle" data-toggle="dropdown">
-                              <i class="fa fa-edit"></i>
-                              <i class="fa fa-angle-down"></i>
-                          </button>
-                          <ul class="dropdown-menu pull-right">
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-print"></i> Print </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-pdf-o"></i> Save as PDF </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-excel-o"></i> Export to Excel </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </td> -->
-                </tr>
-                <tr>
-                  <td>عبد العزيز</td>
-                  <td>كوفي</td>
-                  <td>الرياض</td>
-                  <td>221</td>
-                  <td>كافيهات و مطاعم</td>
-                  <td>2011/04/25 05:45:11 ص</td>
-                  <td>
-                    <div class="btn-group pull-right">
-                      <a class="btn green btn-xs btn-outline" href="javascript:;">
-                        <i class="fa fa-edit"></i> </a>
-                    </div>
-                  </td>
-                  <!-- <td>
-                      <div class="btn-group pull-right">
-                          <button class="btn green btn-xs btn-outline dropdown-toggle" data-toggle="dropdown">
-                              <i class="fa fa-edit"></i>
-                              <i class="fa fa-angle-down"></i>
-                          </button>
-                          <ul class="dropdown-menu pull-right">
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-print"></i> Print </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-pdf-o"></i> Save as PDF </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-excel-o"></i> Export to Excel </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </td> -->
-                </tr>
-                <tr>
-                  <td>عبد العزيز</td>
-                  <td>كوفي</td>
-                  <td>الرياض</td>
-                  <td>221</td>
-                  <td>كافيهات و مطاعم</td>
-                  <td>2011/04/25 05:45:11 ص</td>
-                  <td>
-                    <div class="btn-group pull-right">
-                      <a class="btn green btn-xs btn-outline" href="javascript:;">
-                        <i class="fa fa-edit"></i> </a>
-                    </div>
-                  </td>
-                  <!-- <td>
-                      <div class="btn-group pull-right">
-                          <button class="btn green btn-xs btn-outline dropdown-toggle" data-toggle="dropdown">
-                              <i class="fa fa-edit"></i>
-                              <i class="fa fa-angle-down"></i>
-                          </button>
-                          <ul class="dropdown-menu pull-right">
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-print"></i> Print </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-pdf-o"></i> Save as PDF </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-excel-o"></i> Export to Excel </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </td> -->
-                </tr>
+          <div class="col-md-12">
+            <form action="#" class="form__input">
+              <div class="form__body">
+                <div class="form__group">
+                  <label class="control__label" for="input__1">عوان الرحلة</label>
+                  <div class="form__control">
+                    <input class="input__Form" id="input__1" type="text"/>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="control__label" for="input__2">عنوان الرحلة إنجليزي</label>
+                  <div class="form__control">
+                    <input class="input__Form" id="input__2" type="text"/>
+                  </div>
+                </div>
+              </div>
 
-                <tr>
-                  <td>عبد العزيز</td>
-                  <td>كوفي</td>
-                  <td>الرياض</td>
-                  <td>221</td>
-                  <td>كافيهات و مطاعم</td>
-                  <td>2011/04/25 05:45:11 ص</td>
-                  <td>
-                    <div class="btn-group pull-right">
-                      <a class="btn green btn-xs btn-outline" href="javascript:;">
-                        <i class="fa fa-edit"></i> </a>
-                    </div>
-                  </td>
-                  <!-- <td>
-                      <div class="btn-group pull-right">
-                          <button class="btn green btn-xs btn-outline dropdown-toggle" data-toggle="dropdown">
-                              <i class="fa fa-edit"></i>
-                              <i class="fa fa-angle-down"></i>
-                          </button>
-                          <ul class="dropdown-menu pull-right">
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-print"></i> Print </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-pdf-o"></i> Save as PDF </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-excel-o"></i> Export to Excel </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </td> -->
-                </tr>
-                <tr>
-                  <td>عبد العزيز</td>
-                  <td>كوفي</td>
-                  <td>الرياض</td>
-                  <td>221</td>
-                  <td>كافيهات و مطاعم</td>
-                  <td>2011/04/25 05:45:11 ص</td>
-                  <td>
-                    <div class="btn-group pull-right">
-                      <a class="btn green btn-xs btn-outline" href="javascript:;">
-                        <i class="fa fa-edit"></i> </a>
-                    </div>
-                  </td>
-                  <!-- <td>
-                      <div class="btn-group pull-right">
-                          <button class="btn green btn-xs btn-outline dropdown-toggle" data-toggle="dropdown">
-                              <i class="fa fa-edit"></i>
-                              <i class="fa fa-angle-down"></i>
-                          </button>
-                          <ul class="dropdown-menu pull-right">
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-print"></i> Print </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-pdf-o"></i> Save as PDF </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-excel-o"></i> Export to Excel </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </td> -->
-                </tr>
-                <tr>
-                  <td>عبد العزيز</td>
-                  <td>كوفي</td>
-                  <td>الرياض</td>
-                  <td>221</td>
-                  <td>كافيهات و مطاعم</td>
-                  <td>2011/04/25 05:45:11 ص</td>
-                  <td>
-                    <div class="btn-group pull-right">
-                      <a class="btn green btn-xs btn-outline" href="javascript:;">
-                        <i class="fa fa-edit"></i> </a>
-                    </div>
-                  </td>
-                  <!-- <td>
-                      <div class="btn-group pull-right">
-                          <button class="btn green btn-xs btn-outline dropdown-toggle" data-toggle="dropdown">
-                              <i class="fa fa-edit"></i>
-                              <i class="fa fa-angle-down"></i>
-                          </button>
-                          <ul class="dropdown-menu pull-right">
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-print"></i> Print </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-pdf-o"></i> Save as PDF </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">
-                                      <i class="fa fa-file-excel-o"></i> Export to Excel </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </td> -->
-                </tr>
+              <div class="form__body">
+                <div class="form__group">
+                  <label class="control__label" for="input__3">الموقع</label>
+                  <div class="form__control">
+                    <input class="input__Form" id="input__3" type="text"/>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="control__label" for="input__4">المدينة</label>
+                  <div class="form__control">
+                    <select class="input__Form" id="input__4">
+                      <option disabled selected>إختر مدينة</option>
+                      <option value="R">الرياض</option>
+                      <option value="R">جدة</option>
+                      <option value="R">جدة</option>
+                      <option value="R">جدة</option>
+                      <option value="R">مدن أخرى</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
 
-                </tbody>
-              </table>
-            </div>
+              <div class="form__body">
+                <div class="form__group">
+                  <label class="control__label" for="input__5">المدة من</label>
+                  <div class="form__control">
+                    <input class="input__Form" id="input__5" placeholder="من" type="date"/>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="control__label" for="input__6">المدة إلى</label>
+                  <div class="form__control">
+                    <input class="input__Form" id="input__6" placeholder="إلى" type="date"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__body">
+                <div class="form__group">
+                  <label class="control__label" for="input__7">نوع النشاط</label>
+                  <div class="form__control">
+                    <select class="input__Form" id="input__7">
+                      <option disabled selected>إختر نوع النشاط</option>
+                      <option value="R">نوع 1</option>
+                      <option value="R">نوع 2</option>
+                      <option value="R">نوع 3</option>
+                      <option value="R">نوع 5</option>
+                      <option value="R">أنواع أخرى</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="control__label" for="input__8">الفئة</label>
+                  <div class="form__control">
+                    <select class="input__Form" id="input__8">
+                      <option disabled selected>إختر الفئة</option>
+                      <option value="R">فئة 1</option>
+                      <option value="R">فئة 2</option>
+                      <option value="R">فئة 3</option>
+                      <option value="R">فئة 4</option>
+                      <option value="R"> فئة 5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__body">
+                <div class="form__group">
+                  <label class="control__label" for="input__9">صورة النشاط</label>
+                  <div class="form__control">
+                    <input class="input__Form" id="input__9" type="file"/>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="control__label" for="input__10">قائمة الصور</label>
+                  <div class="form__control">
+                    <input class="input__Form" id="input__10" type="file"/>
+                  </div>
+                </div>
+              </div>
+
+              <!--     إضافة فئات التذاكر         -->
+              <div class="form__body">
+                <div class="form__group">
+                  <p class="control__header">إضافة فئات التذاكر</p>
+                </div>
+              </div>
+
+              <div class="form__body">
+                <div class="form__group">
+                  <label class="control__label" for="input__11">إسم الفئة عربي</label>
+                  <div class="form__control">
+                    <input class="input__Form" id="input__11" type="text"/>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="control__label" for="input__12">إسم الفئة إنجليزي</label>
+                  <div class="form__control">
+                    <input class="input__Form" id="input__12" type="text"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__body">
+                <div class="form__group">
+                  <label class="control__label" for="input__13">سعر الفئة</label>
+                  <div class="form__control">
+                    <input class="input__Form" id="input__13" type="text"/>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="control__label" for="input__14">عدد حضور الفئة</label>
+                  <div class="form__control">
+                    <input class="input__Form" id="input__14" type="text"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__body">
+                <div class="form__group">
+                  <label class="control__label" for="input__15">ملاحظات الفئة (عربي)</label>
+                  <div class="form__control">
+                    <textarea class="input__Form" cols="30" id="input__15" name="" rows="6"></textarea>
+                    <p class="p_input__Form" id="p_input__Form">0/200</p>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="control__label" for="input__16">ملاحظات الفئة (إنجليزي)</label>
+                  <div class="form__control">
+                    <textarea class="input__Form" cols="30" id="input__16" name="" rows="6"></textarea>
+                    <p class="p_input__Form" id="p_input_2__Form">0/200</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="btn__container">
+                <button class="btn__blue" type="submit">
+                  إضافة
+                </button>
+              </div>
+            </form>
           </div>
-          <!-- END EXAMPLE TABLE PORTLET-->
-          <!-- </div> -->
 
         </div>
+
+
+        <!-- End body page 2 -->
+
 
       </div>
       <!-- END CONTENT BODY -->
@@ -597,11 +533,33 @@
     $('#clickmewow').click(function () {
       $('#radio1003').attr('checked', 'checked');
     });
-  })
+  });
 
-  // $('#sample_1').DataTable( {
-  //     responsive: true
-  // } );
+
+</script>
+<script>
+  const input__15 = document.getElementById('input__15');
+  const p_input__Form = document.getElementById('p_input__Form');
+  const input__16 = document.getElementById('input__16');
+  const p_input_2__Form = document.getElementById('p_input_2__Form');
+  input__15.addEventListener('input', function (e) {
+    let text_content = e.target.value.length;
+    if (text_content <= 200 && text_content > 0) {
+      p_input__Form.innerText = `${text_content}/200`;
+    } else {
+      input__15.disabled = true;
+    }
+
+  });
+  input__16.addEventListener('input', function (e) {
+    let text_content = e.target.value.length;
+    if (text_content <= 200 && text_content > 0) {
+      p_input_2__Form.innerText = `${text_content}/200`;
+    } else {
+      input__16.disabled = true;
+    }
+
+  });
 </script>
 </body>
 
