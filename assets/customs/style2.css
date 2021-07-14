@@ -173,7 +173,7 @@ input[type="text"]:focus, textarea:focus, input[type="file"]:focus, input[type="
 
   .form__group .control__label {
     width: 40%;
-    background-color: #0a325f;
+    /*background-color: #0a325f;*/
     font-size: 12px;
   }
 }
