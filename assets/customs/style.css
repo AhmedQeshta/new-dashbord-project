@@ -21,15 +21,6 @@ body {
   margin: 0;
 }
 
-.page-content {
-  background-color: #fafafa !important;
-}
-
-.portlet.light {
-  padding: 12px 20px 15px !important;
-  background-color: #fafafa !important;
-}
-
 .page-header.navbar .page-logo .logo-default {
   margin: 0 !important;
 }
@@ -51,4 +42,17 @@ body {
 
 #sample_1_wrapper .dt-buttons {
   display: none !important;
+}
+
+
+.page-content {
+  margin-top: 0;
+  padding: 0;
+  /* background-color: #fff; */
+  background-color: #fafafa !important;
+}
+
+.portlet.light {
+  padding: 12px 20px 15px !important;
+  background-color: #fafafa !important;
 }
