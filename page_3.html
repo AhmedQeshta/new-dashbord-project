@@ -46,7 +46,7 @@
   <!-- END THEME LAYOUT STYLES -->
 
 
-  <link href="assets/customs/style2.css" rel="stylesheet">
+  <link href="assets/customs/style3.css" rel="stylesheet">
 </head>
 <!-- END HEAD -->
 
@@ -94,20 +94,20 @@
               </li>
 
               <li>
-                <a href="app_inbox.html">
+                <a href="#">
                   <i class="icon-envelope-open"></i> صندوقي
                   <span class="badge badge-danger"> 3 </span>
                 </a>
               </li>
               <li>
-                <a href="app_todo.html">
+                <a href="#">
                   <i class="icon-rocket"></i> مهامي
                   <span class="badge badge-success"> 7 </span>
                 </a>
               </li>
               <li class="divider"></li>
               <li>
-                <a href="page_user_login_1.html">
+                <a href="#">
                   <i class="icon-key"></i>تسجيل الخروج</a>
               </li>
             </ul>
@@ -197,26 +197,27 @@
               <span class="title">التذاكر</span>
             </a>
           </li>
-          <li class="nav-item  start active open">
+          <li class="nav-item">
             <a class="nav-link nav-toggle" href="page_2.html">
               <i class="fa fa-ticket"></i>
               <span class="title">اضافة نشاط</span>
+
+            </a>
+          </li>
+          <li class="nav-item start active open">
+            <a class="nav-link nav-toggle" href="page_3.html">
+              <i class="fa fa-ticket"></i>
+              <span class="title">جدولة نشاط</span>
               <span class="selected"></span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-toggle" href="page_3.html">
-              <i class="fa fa-ticket"></i>
-              <span class="title">جدولة نشاط</span>
-            </a>
-          </li>
-          <li class="nav-item  ">
             <a class="nav-link nav-toggle" href="#">
               <i class="fa fa-ban"></i>
               <span class="title">الدفعات الملغية</span>
             </a>
           </li>
-          <li class="nav-item  ">
+          <li class="nav-item">
             <a class="nav-link nav-toggle" href="#">
               <i class="fa fa-tag"></i>
               <span class="title">الكوبون</span>
@@ -255,7 +256,7 @@
               <i class="fa fa-circle"></i>
             </li>
             <li>
-              <span>إنشاء رحلة بتذاكر</span>
+              <span>جدولة نشاط</span>
             </li>
           </ul>
           <div class="page-toolbar">
@@ -270,200 +271,54 @@
         <!-- END PAGE BAR -->
         <!-- BEGIN PAGE TITLE-->
         <h1 class="page-title FontFamilyTajawal">
-          إنشاء رحلة بتذاكر
+          جدولة نشاط
         </h1>
         <!-- END PAGE TITLE-->
         <!-- END PAGE HEADER-->
 
         <!--  body page 2 -->
-        <div class="row">
-          <div class="col-md-12">
-            <form action="index.html" class="form__input" id="form__sub">
-              <div class="form__body">
-                <div class="form__group">
-                  <label class="control__label" for="input__1">عوان الرحلة</label>
-                  <div class="form__control">
-                    <input class="input__Form" id="input__1" type="text"/>
-                  </div>
-                </div>
-                <div class="form__group">
-                  <label class="control__label" for="input__2">عنوان الرحلة إنجليزي</label>
-                  <div class="form__control">
-                    <input class="input__Form" id="input__2" type="text"/>
-                  </div>
-                </div>
+        <div class="container">
+          <div class="calendar">
+            <div class="month direction-rtl">
+              <i class="fa fa-angle-right prev "></i>
+              <div class="date">
+                <h1></h1>
+                <p></p>
               </div>
-
-              <div class="form__body">
-                <div class="form__group">
-                  <label class="control__label" for="input__3">الموقع</label>
-                  <div class="form__control">
-                    <input class="input__Form" id="input__3" type="text"/>
-                  </div>
-                </div>
-                <div class="form__group">
-                  <label class="control__label" for="input__4">المدينة</label>
-                  <div class="form__control">
-                    <select class="input__Form" id="input__4">
-                      <option disabled selected>إختر مدينة</option>
-                      <option value="R">الرياض</option>
-                      <option value="R">جدة</option>
-                      <option value="R">جدة</option>
-                      <option value="R">جدة</option>
-                      <option value="R">مدن أخرى</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form__body">
-                <div class="form__group">
-                  <label class="control__label" for="input__5">المدة من</label>
-                  <div class="form__control">
-                    <input class="input__Form" id="input__5" placeholder="من" type="time"/>
-                  </div>
-                </div>
-                <div class="form__group">
-                  <label class="control__label" for="input__6">المدة إلى</label>
-                  <div class="form__control">
-                    <input class="input__Form" id="input__6" placeholder="إلى" type="time"/>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form__body">
-                <div class="form__group">
-                  <label class="control__label" for="input__7">نوع النشاط</label>
-                  <div class="form__control">
-                    <select class="input__Form" id="input__7">
-                      <option disabled selected>إختر نوع النشاط</option>
-                      <option value="R">نوع 1</option>
-                      <option value="R">نوع 2</option>
-                      <option value="R">نوع 3</option>
-                      <option value="R">نوع 5</option>
-                      <option value="R">أنواع أخرى</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__group">
-                  <label class="control__label" for="input__8">الفئة</label>
-                  <div class="form__control">
-                    <select class="input__Form" id="input__8">
-                      <option disabled selected>إختر الفئة</option>
-                      <option value="R">فئة 1</option>
-                      <option value="R">فئة 2</option>
-                      <option value="R">فئة 3</option>
-                      <option value="R">فئة 4</option>
-                      <option value="R"> فئة 5</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form__body">
-                <div class="form__group">
-                  <label class="control__label" for="input__9">صورة النشاط</label>
-                  <div class="form__control">
-                    <input class="input__Form" id="input__9" type="file"/>
-                  </div>
-                </div>
-                <div class="form__group">
-                  <label class="control__label" for="input__10">قائمة الصور</label>
-                  <div class="form__control">
-                    <input class="input__Form" id="input__10" type="file"/>
-                  </div>
-                </div>
-              </div>
-
-
-            </form>
-          </div>
-
-        </div>
-
-        <!--     إضافة فئات التذاكر         -->
-        <div class="form-body">
-          <div class="form-group">
-            <form action="#" class="mt-repeater form__input">
-              <h3 class="mt-repeater-title formHeader">إضافة فئات التذاكر</h3>
-              <div class="btn__container">
-                <a class="btn btn__blue  mt-repeater-add" data-repeater-create href="javascript:;" id="adding">
-                  إضافة</a>
-              </div>
-              <div data-repeater-list="group-a">
-                <div class="mt-repeater-item" data-repeater-item>
-                  <div class="mt-repeater-input">
-                    <a class="btn btn-danger mt-repeater-delete" data-repeater-delete href="javascript:;">
-                      <i class="fa fa-close"></i> Delete</a>
-                  </div>
-                  <div class="form__body">
-                    <div class="form__group">
-                      <label class="control__label">إسم الفئة عربي</label>
-                      <div class="form__control">
-                        <input class="input__Form" name="category_ar" type="text"/>
-                      </div>
-                    </div>
-                    <div class="form__group">
-                      <label class="control__label">إسم الفئة إنجليزي</label>
-                      <div class="form__control">
-                        <input class="input__Form" name="category_en" type="text"/>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form__body">
-                    <div class="form__group">
-                      <label class="control__label">سعر الفئة</label>
-                      <div class="form__control">
-                        <input class="input__Form" name="category_price" type="text"/>
-                      </div>
-                    </div>
-                    <div class="form__group">
-                      <label class="control__label">عدد حضور الفئة</label>
-                      <div class="form__control">
-                        <input class="input__Form" name="category_limit" type="text"/>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form__body Input_textarea">
-                    <div class="form__group Input_textarea">
-                      <label class="control__label">ملاحظات الفئة (عربي)</label>
-                      <div class="form__control">
-                        <textarea class="input__Form textarea" cols="30" maxlength="200"
-                                  name="category_note_ar"
-                                  rows="6"></textarea>
-                        <p class="p_input__Form">0/200</p>
-                      </div>
-                    </div>
-                    <div class="form__group Input_textarea">
-                      <label class="control__label">ملاحظات الفئة (إنجليزي)</label>
-                      <div class="form__control">
-                        <textarea class="input__Form textarea" cols="30" maxlength="200" name="category_note_en"
-                                  rows="6"></textarea>
-                        <p class="p_input__Form">0/200</p>
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div>
-              </div>
-
-            </form>
+              <i class="fa fa-angle-left next"></i>
+            </div>
+            <div class="weekdays">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="days"></div>
           </div>
         </div>
-
-
-        <div class="btn__container">
-          <button class="btn__blue" id="btn__submit" type="button">
-            إنشاء
-          </button>
-        </div>
-
         <!-- End body page 2 -->
 
+        <div class="my-listDo">
+          <ul>
+            <!--            <li class="li_date">-->
+            <!--              <input name="date" type="text" value="15/7/2021">-->
+            <!--              <i class="fa fa-trash"></i>-->
+            <!--            </li>-->
+          </ul>
+        </div>
 
+        <div>
+          <div class="daysCrossed">
+            <p>عدد الايام المختارة:</p>
+            <p id="daysCrossed">0</p>
+          </div>
+          <div>
+            <a class="daysCrossed_btn" href="#">جدولة</a>
+          </div>
+        </div>
       </div>
       <!-- END CONTENT BODY -->
     </div>
@@ -562,49 +417,155 @@
       $('#radio1003').attr('checked', 'checked');
     });
   });
-
-
 </script>
 <script>
-  const btn__submit = document.getElementById('btn__submit');
-  const form__sub = document.getElementById('form__sub');
-  const adding = document.getElementById('adding');
-  btn__submit.addEventListener('click', function () {
-    form__sub.submit();
+  const date = new Date();
+
+  const renderCalendar = () => {
+    date.setDate(1);
+
+    const monthDays = document.querySelector(".days");
+
+    const lastDay = new Date(
+      date.getFullYear(),
+      date.getMonth() + 1,
+      0
+    ).getDate();
+
+    const prevLastDay = new Date(
+      date.getFullYear(),
+      date.getMonth(),
+      0
+    ).getDate();
+
+    const firstDayIndex = date.getDay();
+
+    const lastDayIndex = new Date(
+      date.getFullYear(),
+      date.getMonth() + 1,
+      0
+    ).getDay();
+
+    // const nextDays = 7 - lastDayIndex - 1;
+    const nextDays = 7;
+
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+
+    document.querySelector(".date h1").innerHTML = months[date.getMonth()];
+
+
+    let days = "";
+
+
+    for (let x = firstDayIndex; x > 0; x--) {
+      days += `<div onclick="selectDay(event)" class="prev-date" data-target="${prevLastDay - x + 1}/${date.getMonth()}/${date.getFullYear()}">${prevLastDay - x + 1}</div>`;
+    }
+
+    for (let i = 1; i <= lastDay; i++) {
+      // console.log({date:new Date().getDate(), month:date.getMonth(),get:new Date().getMonth()});
+      if (i === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
+        days += `<div onclick="selectDay(event)" class="today"  data-target="${i}/${date.getMonth() + 1}/${date.getFullYear()}">${i}</div>`;
+      } else {
+        days += `<div onclick="selectDay(event)" data-target="${i}/${date.getMonth() + 1}/${date.getFullYear()}">${i}</div>`;
+      }
+    }
+
+    for (let j = 1; j <= nextDays; j++) {
+      days += `<div onclick="selectDay(event)"  class="next-date" data-target="${j}/${date.getMonth() + 2}/${date.getFullYear()}" >${j}</div>`;
+      monthDays.innerHTML = days;
+    }
+  };
+
+  document.querySelector(".prev").addEventListener("click", () => {
+    date.setMonth(date.getMonth() - 1);
+    renderCalendar();
+  });
+
+  document.querySelector(".next").addEventListener("click", () => {
+    date.setMonth(date.getMonth() + 1);
+    renderCalendar();
   });
 
 
-  window.onload = (event) => {
-    const textarea = document.querySelectorAll('.form__group .form__control .textarea');
-    const p_input__Form = document.querySelectorAll('.form__group .form__control .p_input__Form');
-    textarea.forEach((n, index) => {
-      n.addEventListener('input', function (e) {
-        let text_content = e.target.value.length;
-        if (text_content <= 200 && text_content > 0) {
-          p_input__Form[index].innerText = `${text_content}/200`;
-        } else {
+  function selectDay(e) {
+
+    // console.log(e.target);
+    // console.log(e.target.textContent);
+    addTask(e.target.getAttribute('data-target').trim());
 
 
-        }
-      });
-    });
+  }
 
-    adding.addEventListener('click', function () {
-      const textarea = document.querySelectorAll('.form__group .form__control .textarea');
-      const p_input__Form = document.querySelectorAll('.form__group .form__control .p_input__Form');
-      textarea.forEach((n, index) => {
-        n.addEventListener('input', function (e) {
-          let text_content = e.target.value.length;
-          if (text_content <= 200 && text_content > 0) {
-            p_input__Form[index].innerText = `${text_content}/200`;
-          } else {
 
-          }
-        });
-      })
+  date.setMonth(date.getMonth() + 1);
+  renderCalendar();
+  date.setMonth(date.getMonth() - 1);
+  renderCalendar();
+
+
+  // --------------------- new -------------------
+  let daysCrossed = 0;
+  const addTask = (task) => {
+    /*
+     <li class="li_date">
+              <input name="date" type="text" value="15/7/2021">
+              <i class="fa fa-trash"></i>
+            </li>
+    */
+    const data = []
+    document.querySelectorAll('.my-listDo ul li input').forEach((e) => {
+      data.push(e.value)
+      // console.log(e.value);
     })
+    if (!data.includes(task)) {
+
+      const newTask = document.createElement("li");
+      const input = document.createElement("input");
+      const icon = document.createElement("i");
+      input.name = "date";
+      input.type = "text";
+      input.value = task;
+      // newTask.textContent = task;
+      newTask.className = 'li_date';
+      icon.className = "fa fa-trash";
+      const LI = document.querySelector(".my-listDo ul").appendChild(newTask);
+      const days_Crossed = document.getElementById("daysCrossed");
+      LI.appendChild(input);
+      LI.appendChild(icon);
+      daysCrossed++;
+      days_Crossed.innerText = daysCrossed;
+      icon.addEventListener("click", function (e) {
+        removeTask(LI);
+        daysCrossed--;
+        days_Crossed.innerText = daysCrossed;
+      })
+
+      return newTask;
+    }
+
   };
+
+  const removeTask = (task) => {
+    task.style.opacity = 0;
+    task.remove();
+
+  };
+
 </script>
+
 </body>
 
 </html>

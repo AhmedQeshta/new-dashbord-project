@@ -1,6 +1,8 @@
 body {
   font-family: "Tajawal", sans-serif !important;
+  min-width: 350px;
 }
+
 .page-header.navbar .page-logo {
   float: right;
   width: 235px;
