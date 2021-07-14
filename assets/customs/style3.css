@@ -21,6 +21,10 @@ body {
   margin: 0;
 }
 
+.page-content {
+  background-color: #fafafa;
+}
+
 .page-header.navbar .page-logo .logo-default {
   margin: 0 !important;
 }
@@ -48,7 +52,7 @@ body {
 .container {
   width: 100%;
   height: auto;
-  background-color: white;
+  background-color: #fafafa;
   color: #bbb;
   display: flex;
   justify-content: start;
@@ -58,7 +62,7 @@ body {
 .calendar {
   width: 45rem;
   height: auto;
-  background-color: white;
+  background-color: #fafafa;
   margin-bottom: 20px;
   /* box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4); */
 }
@@ -66,7 +70,7 @@ body {
 .month {
   width: 100%;
   height: 5rem;
-  background-color: white;
+  background-color: #fafafa;
   display: flex;
   justify-content: space-between;
   align-items: center;

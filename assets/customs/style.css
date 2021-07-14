@@ -21,6 +21,15 @@ body {
   margin: 0;
 }
 
+.page-content {
+  background-color: #fafafa;
+}
+
+.portlet.light {
+  padding: 12px 20px 15px;
+  background-color: #fafafa;
+}
+
 .page-header.navbar .page-logo .logo-default {
   margin: 0 !important;
 }

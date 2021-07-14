@@ -14,6 +14,10 @@ body {
   justify-content: space-between !important;
 }
 
+.page-content {
+  background-color: #fafafa;
+}
+
 .logo_label {
   font-weight: 500;
   font-size: 2.5rem;
@@ -115,10 +119,31 @@ input[type="text"]:focus, textarea:focus, input[type="file"]:focus, input[type="
   bottom: -35px;
 }
 
+/**/
+
+.mt-repeater .mt-repeater-item:not(:nth-of-type(2)) {
+  border-top: 1px solid #ddd !important;
+  padding-top: 15px !important;
+  margin-top: 15px !important;
+  border-bottom: 0 !important;
+}
+
+.mt-repeater .mt-repeater-item:nth-of-type(2) {
+  border-top: 1px solid #ddd !important;
+  padding-top: 15px !important;
+  margin-top: 15px !important;
+  border-bottom: 0 !important;
+}
 
 /*btn__blue*/
 .btn__container {
   margin: 0;
+}
+
+.form-group .btn__container {
+  padding: 0 0 15px 0 !important;
+  margin: 0 !important;
+  border-bottom: 1px solid silver;
 }
 
 .btn__container .btn__blue {
