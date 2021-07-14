@@ -426,18 +426,18 @@
                     </div>
                   </div>
 
-                  <div class="form__body">
+                  <div class="form__body Input_textarea">
                     <div class="form__group">
                       <label class="control__label">ملاحظات الفئة (عربي)</label>
                       <div class="form__control">
-                        <textarea class="input__Form textarea" cols="30" name="" rows="6"></textarea>
+                        <textarea class="input__Form textarea" cols="30" maxlength="200" name="" rows="6"></textarea>
                         <p class="p_input__Form">0/200</p>
                       </div>
                     </div>
-                    <div class="form__group">
+                    <div class="form__group Input_textarea">
                       <label class="control__label">ملاحظات الفئة (إنجليزي)</label>
                       <div class="form__control">
-                        <textarea class="input__Form textarea" cols="30" name="" rows="6"></textarea>
+                        <textarea class="input__Form textarea" cols="30" maxlength="200" name="" rows="6"></textarea>
                         <p class="p_input__Form">0/200</p>
                       </div>
                     </div>
@@ -580,7 +580,8 @@
         if (text_content <= 200 && text_content > 0) {
           p_input__Form[index].innerText = `${text_content}/200`;
         } else {
-          n.disabled = true;
+
+
         }
       });
     });
@@ -594,7 +595,7 @@
           if (text_content <= 200 && text_content > 0) {
             p_input__Form[index].innerText = `${text_content}/200`;
           } else {
-            n.disabled = true;
+
           }
         });
       })
