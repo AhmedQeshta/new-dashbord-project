@@ -278,7 +278,7 @@
         <!--  body page 2 -->
         <div class="row">
           <div class="col-md-12">
-            <form action="#" class="form__input">
+            <form action="index.html" class="form__input" id="form__sub">
               <div class="form__body">
                 <div class="form__group">
                   <label class="control__label" for="input__1">عوان الرحلة</label>
@@ -376,69 +376,141 @@
               </div>
 
               <!--     إضافة فئات التذاكر         -->
-              <div class="form__body">
-                <div class="form__group">
-                  <p class="control__header">إضافة فئات التذاكر</p>
-                </div>
-              </div>
+              <!--              <div class="form__body">-->
+              <!--                <div class="form__group">-->
+              <!--                  <p class="control__header">إضافة فئات التذاكر</p>-->
+              <!--                </div>-->
+              <!--              </div>-->
 
-              <div class="form__body">
-                <div class="form__group">
-                  <label class="control__label" for="input__11">إسم الفئة عربي</label>
-                  <div class="form__control">
-                    <input class="input__Form" id="input__11" type="text"/>
-                  </div>
-                </div>
-                <div class="form__group">
-                  <label class="control__label" for="input__12">إسم الفئة إنجليزي</label>
-                  <div class="form__control">
-                    <input class="input__Form" id="input__12" type="text"/>
-                  </div>
-                </div>
-              </div>
+              <!--              <div class="form__body">-->
+              <!--                <div class="form__group">-->
+              <!--                  <label class="control__label" for="input__11">إسم الفئة عربي</label>-->
+              <!--                  <div class="form__control">-->
+              <!--                    <input class="input__Form" id="input__11" type="text"/>-->
+              <!--                  </div>-->
+              <!--                </div>-->
+              <!--                <div class="form__group">-->
+              <!--                  <label class="control__label" for="input__12">إسم الفئة إنجليزي</label>-->
+              <!--                  <div class="form__control">-->
+              <!--                    <input class="input__Form" id="input__12" type="text"/>-->
+              <!--                  </div>-->
+              <!--                </div>-->
+              <!--              </div>-->
 
-              <div class="form__body">
-                <div class="form__group">
-                  <label class="control__label" for="input__13">سعر الفئة</label>
-                  <div class="form__control">
-                    <input class="input__Form" id="input__13" type="text"/>
-                  </div>
-                </div>
-                <div class="form__group">
-                  <label class="control__label" for="input__14">عدد حضور الفئة</label>
-                  <div class="form__control">
-                    <input class="input__Form" id="input__14" type="text"/>
-                  </div>
-                </div>
-              </div>
+              <!--              <div class="form__body">-->
+              <!--                <div class="form__group">-->
+              <!--                  <label class="control__label" for="input__13">سعر الفئة</label>-->
+              <!--                  <div class="form__control">-->
+              <!--                    <input class="input__Form" id="input__13" type="text"/>-->
+              <!--                  </div>-->
+              <!--                </div>-->
+              <!--                <div class="form__group">-->
+              <!--                  <label class="control__label" for="input__14">عدد حضور الفئة</label>-->
+              <!--                  <div class="form__control">-->
+              <!--                    <input class="input__Form" id="input__14" type="text"/>-->
+              <!--                  </div>-->
+              <!--                </div>-->
+              <!--              </div>-->
 
-              <div class="form__body">
-                <div class="form__group">
-                  <label class="control__label" for="input__15">ملاحظات الفئة (عربي)</label>
-                  <div class="form__control">
-                    <textarea class="input__Form" cols="30" id="input__15" name="" rows="6"></textarea>
-                    <p class="p_input__Form" id="p_input__Form">0/200</p>
-                  </div>
-                </div>
-                <div class="form__group">
-                  <label class="control__label" for="input__16">ملاحظات الفئة (إنجليزي)</label>
-                  <div class="form__control">
-                    <textarea class="input__Form" cols="30" id="input__16" name="" rows="6"></textarea>
-                    <p class="p_input__Form" id="p_input_2__Form">0/200</p>
-                  </div>
-                </div>
-              </div>
+              <!--              <div class="form__body">-->
+              <!--                <div class="form__group">-->
+              <!--                  <label class="control__label" for="input__15">ملاحظات الفئة (عربي)</label>-->
+              <!--                  <div class="form__control">-->
+              <!--                    <textarea class="input__Form" cols="30" id="input__15" name="" rows="6"></textarea>-->
+              <!--                    <p class="p_input__Form" id="p_input__Form">0/200</p>-->
+              <!--                  </div>-->
+              <!--                </div>-->
+              <!--                <div class="form__group">-->
+              <!--                  <label class="control__label" for="input__16">ملاحظات الفئة (إنجليزي)</label>-->
+              <!--                  <div class="form__control">-->
+              <!--                    <textarea class="input__Form" cols="30" id="input__16" name="" rows="6"></textarea>-->
+              <!--                    <p class="p_input__Form" id="p_input_2__Form">0/200</p>-->
+              <!--                  </div>-->
+              <!--                </div>-->
+              <!--              </div>-->
 
-              <div class="btn__container">
-                <button class="btn__blue" type="submit">
-                  إضافة
-                </button>
-              </div>
+
             </form>
           </div>
 
         </div>
 
+
+        <div class="form-body">
+          <div class="form-group">
+            <form action="#" class="mt-repeater form__input">
+              <h3 class="mt-repeater-title formHeader">إضافة فئات التذاكر</h3>
+              <div class="btn__container">
+                <a class="btn btn__blue  mt-repeater-add" data-repeater-create href="javascript:;" id="adding">
+                  إضافة</a>
+              </div>
+              <div data-repeater-list="group-a">
+                <div class="mt-repeater-item" data-repeater-item>
+                  <div class="mt-repeater-input">
+                    <a class="btn btn-danger mt-repeater-delete" data-repeater-delete href="javascript:;">
+                      <i class="fa fa-close"></i> Delete</a>
+                  </div>
+                  <div class="form__body">
+                    <div class="form__group">
+                      <label class="control__label">إسم الفئة عربي</label>
+                      <div class="form__control">
+                        <input class="input__Form" type="text"/>
+                      </div>
+                    </div>
+                    <div class="form__group">
+                      <label class="control__label">إسم الفئة إنجليزي</label>
+                      <div class="form__control">
+                        <input class="input__Form" type="text"/>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form__body">
+                    <div class="form__group">
+                      <label class="control__label">سعر الفئة</label>
+                      <div class="form__control">
+                        <input class="input__Form" type="text"/>
+                      </div>
+                    </div>
+                    <div class="form__group">
+                      <label class="control__label">عدد حضور الفئة</label>
+                      <div class="form__control">
+                        <input class="input__Form" type="text"/>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form__body">
+                    <div class="form__group">
+                      <label class="control__label">ملاحظات الفئة (عربي)</label>
+                      <div class="form__control">
+                        <textarea class="input__Form textarea" cols="30" name="" rows="6"></textarea>
+                        <p class="p_input__Form">0/200</p>
+                      </div>
+                    </div>
+                    <div class="form__group">
+                      <label class="control__label">ملاحظات الفئة (إنجليزي)</label>
+                      <div class="form__control">
+                        <textarea class="input__Form textarea" cols="30" name="" rows="6"></textarea>
+                        <p class="p_input__Form">0/200</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+
+        <div class="btn__container">
+          <button class="btn__blue" id="btn__submit" type="button">
+            إنشاء
+          </button>
+        </div>
 
         <!-- End body page 2 -->
 
@@ -512,6 +584,11 @@
 <script src="assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js"
         type="text/javascript"></script>
 
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="assets/global/plugins/jquery-repeater/jquery.repeater.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+
 <!-- BEGIN THEME GLOBAL SCRIPTS -->
 <script src="assets/global/scripts/app.min.js" type="text/javascript"></script>
 <!-- END THEME GLOBAL SCRIPTS -->
@@ -520,6 +597,8 @@
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
 <script src="assets/pages/scripts/table-datatables-responsive.min.js" type="text/javascript"></script>
+<script src="assets/pages/scripts/form-repeater.min.js" type="text/javascript"></script>
+<script src="assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <!-- END PAGE LEVEL SCRIPTS -->
 <!-- BEGIN THEME LAYOUT SCRIPTS -->
@@ -538,28 +617,43 @@
 
 </script>
 <script>
-  const input__15 = document.getElementById('input__15');
-  const p_input__Form = document.getElementById('p_input__Form');
-  const input__16 = document.getElementById('input__16');
-  const p_input_2__Form = document.getElementById('p_input_2__Form');
-  input__15.addEventListener('input', function (e) {
-    let text_content = e.target.value.length;
-    if (text_content <= 200 && text_content > 0) {
-      p_input__Form.innerText = `${text_content}/200`;
-    } else {
-      input__15.disabled = true;
-    }
-
+  const btn__submit = document.getElementById('btn__submit');
+  const form__sub = document.getElementById('form__sub');
+  const adding = document.getElementById('adding');
+  btn__submit.addEventListener('click', function () {
+    form__sub.submit();
   });
-  input__16.addEventListener('input', function (e) {
-    let text_content = e.target.value.length;
-    if (text_content <= 200 && text_content > 0) {
-      p_input_2__Form.innerText = `${text_content}/200`;
-    } else {
-      input__16.disabled = true;
-    }
 
-  });
+
+  window.onload = (event) => {
+    const textarea = document.querySelectorAll('.form__group .form__control .textarea');
+    const p_input__Form = document.querySelectorAll('.form__group .form__control .p_input__Form');
+    textarea.forEach((n, index) => {
+      n.addEventListener('input', function (e) {
+        let text_content = e.target.value.length;
+        if (text_content <= 200 && text_content > 0) {
+          p_input__Form[index].innerText = `${text_content}/200`;
+        } else {
+          n.disabled = true;
+        }
+      });
+    });
+
+    adding.addEventListener('click', function () {
+      const textarea = document.querySelectorAll('.form__group .form__control .textarea');
+      const p_input__Form = document.querySelectorAll('.form__group .form__control .p_input__Form');
+      textarea.forEach((n, index) => {
+        n.addEventListener('input', function (e) {
+          let text_content = e.target.value.length;
+          if (text_content <= 200 && text_content > 0) {
+            p_input__Form[index].innerText = `${text_content}/200`;
+          } else {
+            n.disabled = true;
+          }
+        });
+      })
+    })
+  };
 </script>
 </body>
 

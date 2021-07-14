@@ -35,7 +35,7 @@ body {
 }
 
 
-.row .form__input {
+.form__input {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -123,6 +123,7 @@ input[type="text"]:focus, textarea:focus, input[type="file"]:focus, input[type="
   background-color: transparent;
   font-size: 16px;
   transition: all ease 0.3s;
+  color: #0a325f;
 }
 
 .btn__container .btn__blue:hover {
@@ -131,6 +132,13 @@ input[type="text"]:focus, textarea:focus, input[type="file"]:focus, input[type="
   color: white;
 }
 
+.formHeader {
+  margin-top: 15px !important;
+}
+
+.btn-danger {
+  border-radius: 10px !important;
+}
 
 /*1040px*/
 @media (max-width: 1040px) {
