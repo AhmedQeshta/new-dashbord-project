@@ -49,6 +49,7 @@ body {
 
 .form__input .form__body .form__group {
   display: flex;
+  flex-direction: column;
   width: 100%;
   margin-left: 20px;
   margin-top: 8px;
@@ -61,25 +62,25 @@ body {
 
 .form__group .control__label {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 35%;
-  background-color: #0a325f;
+  justify-content: start;
+  align-items: start;
+  /*width: 35%;*/
+  /*background-color: #0a325f;*/
   padding: 12px 3px !important;
   border-radius: 10px !important;
-  color: white;
+  color: #0a325f;
   text-align: center;
 }
 
 .form__group .form__control {
-  width: 65%;
+  width: 100%;
   font-size: 16px !important;
 }
 
 .form__group .form__control .input__Form {
   width: 100%;
   padding: 10px 8px !important;
-  border-radius: 10px !important;
+  /*border-radius: 10px !important;*/
   margin-right: 5px;
   font-size: 16px !important;
 }
