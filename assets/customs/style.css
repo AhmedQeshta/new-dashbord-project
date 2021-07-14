@@ -22,12 +22,12 @@ body {
 }
 
 .page-content {
-  background-color: #fafafa;
+  background-color: #fafafa !important;
 }
 
 .portlet.light {
-  padding: 12px 20px 15px;
-  background-color: #fafafa;
+  padding: 12px 20px 15px !important;
+  background-color: #fafafa !important;
 }
 
 .page-header.navbar .page-logo .logo-default {
