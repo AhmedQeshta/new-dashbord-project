@@ -320,13 +320,13 @@
                 <div class="form__group">
                   <label class="control__label" for="input__5">المدة من</label>
                   <div class="form__control">
-                    <input class="input__Form" id="input__5" placeholder="من" type="date"/>
+                    <input class="input__Form" id="input__5" placeholder="من" type="time"/>
                   </div>
                 </div>
                 <div class="form__group">
                   <label class="control__label" for="input__6">المدة إلى</label>
                   <div class="form__control">
-                    <input class="input__Form" id="input__6" placeholder="إلى" type="date"/>
+                    <input class="input__Form" id="input__6" placeholder="إلى" type="time"/>
                   </div>
                 </div>
               </div>
@@ -400,13 +400,13 @@
                     <div class="form__group">
                       <label class="control__label">إسم الفئة عربي</label>
                       <div class="form__control">
-                        <input class="input__Form" type="text"/>
+                        <input class="input__Form" name="category_ar" type="text"/>
                       </div>
                     </div>
                     <div class="form__group">
                       <label class="control__label">إسم الفئة إنجليزي</label>
                       <div class="form__control">
-                        <input class="input__Form" type="text"/>
+                        <input class="input__Form" name="category_en" type="text"/>
                       </div>
                     </div>
                   </div>
@@ -415,29 +415,32 @@
                     <div class="form__group">
                       <label class="control__label">سعر الفئة</label>
                       <div class="form__control">
-                        <input class="input__Form" type="text"/>
+                        <input class="input__Form" name="category_price" type="text"/>
                       </div>
                     </div>
                     <div class="form__group">
                       <label class="control__label">عدد حضور الفئة</label>
                       <div class="form__control">
-                        <input class="input__Form" type="text"/>
+                        <input class="input__Form" name="category_limit" type="text"/>
                       </div>
                     </div>
                   </div>
 
                   <div class="form__body Input_textarea">
-                    <div class="form__group">
+                    <div class="form__group Input_textarea">
                       <label class="control__label">ملاحظات الفئة (عربي)</label>
                       <div class="form__control">
-                        <textarea class="input__Form textarea" cols="30" maxlength="200" name="" rows="6"></textarea>
+                        <textarea class="input__Form textarea" cols="30" maxlength="200"
+                                  name="category_note_ar"
+                                  rows="6"></textarea>
                         <p class="p_input__Form">0/200</p>
                       </div>
                     </div>
                     <div class="form__group Input_textarea">
                       <label class="control__label">ملاحظات الفئة (إنجليزي)</label>
                       <div class="form__control">
-                        <textarea class="input__Form textarea" cols="30" maxlength="200" name="" rows="6"></textarea>
+                        <textarea class="input__Form textarea" cols="30" maxlength="200" name="category_note_en"
+                                  rows="6"></textarea>
                         <p class="p_input__Form">0/200</p>
                       </div>
                     </div>

@@ -84,7 +84,7 @@ body {
   font-size: 16px !important;
 }
 
-input[type="text"], textarea, input[type="file"], input[type="date"], select {
+input[type="text"], textarea, input[type="file"], input[type="time"], select {
   font-size: 16px !important;
   /*padding: 5px !important;*/
   outline: none;
@@ -93,7 +93,7 @@ input[type="text"], textarea, input[type="file"], input[type="date"], select {
   resize: none;
 }
 
-input[type="text"]:focus, textarea:focus, input[type="file"]:focus, input[type="date"]:focus, select:focus {
+input[type="text"]:focus, textarea:focus, input[type="file"]:focus, input[type="time"]:focus, select:focus {
   outline: none;
   border: 0;
   box-shadow: 1px 1px 3px rgba(192, 192, 192, 0.95);
@@ -111,7 +111,7 @@ input[type="text"]:focus, textarea:focus, input[type="file"]:focus, input[type="
 .p_input__Form {
   position: absolute;
   left: 2px;
-  bottom: -38px;
+  bottom: -35px;
 }
 
 
