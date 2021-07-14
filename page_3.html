@@ -253,7 +253,7 @@
           <ul class="page-breadcrumb">
             <li>
               <a href="index.html">الرئيسية</a>
-              <i class="fa"> - </i>
+              <i class="fa"> / </i>
             </li>
             <li>
               <span>جدولة نشاط</span>
@@ -303,9 +303,48 @@
 
         <div class="my-listDo">
           <ul>
-            <!--            <li class="li_date">-->
-            <!--              <input name="date" type="text" value="15/7/2021">-->
-            <!--              <i class="fa fa-trash"></i>-->
+            <!--            <li class="li_date_parent">-->
+            <!--              <ul>-->
+            <!--                <li class="li_date">-->
+            <!--                  <input name="date" type="text" value="15/7/2021">-->
+            <!--                  <i class="fa fa-trash"></i>-->
+            <!--                </li>-->
+            <!--                <li>-->
+            <!--                  <div class="form-body">-->
+            <!--                    <div class="form-group">-->
+            <!--                      <form action="#" class="mt-repeater form__input">-->
+            <!--                        <div data-repeater-list="group-a1">-->
+            <!--                          <div class="mt-repeater-item" data-repeater-item>-->
+            <!--                            <div class="mt-repeater-input">-->
+            <!--                              <a class="btn btn-danger mt-repeater-delete" data-repeater-delete href="javascript:;">-->
+            <!--                                <i class="fa fa-close"></i> Delete</a>-->
+            <!--                            </div>-->
+            <!--                            <div class="form__body">-->
+            <!--                              <div class="form__group">-->
+            <!--                                <label class="control__label">من</label>-->
+            <!--                                <div class="form__control">-->
+            <!--                                  <input class="input__Form" name="time_from" style="color: black" type="time"/>-->
+            <!--                                </div>-->
+            <!--                              </div>-->
+            <!--                              <div class="form__group">-->
+            <!--                                <label class="control__label">إلى</label>-->
+            <!--                                <div class="form__control">-->
+            <!--                                  <input class="input__Form" name="time_to" style="color: black" type="time"/>-->
+            <!--                                </div>-->
+            <!--                              </div>-->
+            <!--                            </div>-->
+            <!--                          </div>-->
+            <!--                        </div>-->
+            <!--                        <div class="btn__container">-->
+            <!--                          <a class="btn btn__blue  mt-repeater-add" data-repeater-create href="javascript:;"-->
+            <!--                             id="adding">-->
+            <!--                            إضافة</a>-->
+            <!--                        </div>-->
+            <!--                      </form>-->
+            <!--                    </div>-->
+            <!--                  </div>-->
+            <!--                </li>-->
+            <!--              </ul>-->
             <!--            </li>-->
           </ul>
         </div>
@@ -519,42 +558,68 @@
   // --------------------- new -------------------
   let daysCrossed = 0;
   const addTask = (task) => {
-    /*
-     <li class="li_date">
-              <input name="date" type="text" value="15/7/2021">
-              <i class="fa fa-trash"></i>
-            </li>
-    */
-    const data = []
-    document.querySelectorAll('.my-listDo ul li input').forEach((e) => {
-      data.push(e.value)
-      // console.log(e.value);
-    })
-    if (!data.includes(task)) {
+    // const data = []
+    // document.querySelectorAll('.my-listDo ul li input').forEach((e) => {
+    //   data.push(e.value)
+    //   // console.log(e.value);
+    // })
+    // if (!data.includes(task)) {
+    const newTask = document.createElement("li");
+    const input = document.createElement("input");
+    const icon = document.createElement("i");
+    const newTime = document.createElement("li");
+    const newTime2 = document.createElement("li");
+    const ulParent = document.createElement("ul");
+    input.name = "date";
+    input.type = "text";
+    input.value = task;
+    newTime.className = 'li_date';
+    newTask.className = 'li_date_parent';
+    icon.className = "fa fa-trash";
+    const ulElement = document.querySelector(".my-listDo ul");
+    const LI = ulElement.appendChild(newTask);
+    const ul_Parent = LI.appendChild(ulParent);
+    const li_child = ul_Parent.appendChild(newTime);
+    li_child.appendChild(input);
+    li_child.appendChild(icon);
+    const li_child_2 = ul_Parent.appendChild(newTime2);
+    li_child_2.innerHTML = `<div class="form-body">
+                    <div class="form-group">
+                      <form action="#" class="mt-repeater form__input">
+                        <div data-repeater-list="group-a">
+                          <div class="mt-repeater-item" data-repeater-item>
 
-      const newTask = document.createElement("li");
-      const input = document.createElement("input");
-      const icon = document.createElement("i");
-      input.name = "date";
-      input.type = "text";
-      input.value = task;
-      // newTask.textContent = task;
-      newTask.className = 'li_date';
-      icon.className = "fa fa-trash";
-      const LI = document.querySelector(".my-listDo ul").appendChild(newTask);
-      const days_Crossed = document.getElementById("daysCrossed");
-      LI.appendChild(input);
-      LI.appendChild(icon);
-      daysCrossed++;
+                            <div class="form__body">
+                              <div class="form__group">
+                                <label class="control__label">من</label>
+                                <div class="form__control">
+                                  <input class="input__Form" name="time_from" style="color: black" type="time"/>
+                                </div>
+                              </div>
+                              <div class="form__group">
+                                <label class="control__label">إلى</label>
+                                <div class="form__control">
+                                  <input class="input__Form" name="time_to" style="color: black" type="time"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>`;
+    const days_Crossed = document.getElementById("daysCrossed");
+    daysCrossed++;
+    days_Crossed.innerText = daysCrossed;
+    icon.addEventListener("click", function (e) {
+      removeTask(LI);
+      daysCrossed--;
       days_Crossed.innerText = daysCrossed;
-      icon.addEventListener("click", function (e) {
-        removeTask(LI);
-        daysCrossed--;
-        days_Crossed.innerText = daysCrossed;
-      })
+    })
 
-      return newTask;
-    }
+    return newTask;
+    // }
 
   };
 

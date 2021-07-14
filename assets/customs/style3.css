@@ -46,6 +46,138 @@ body {
   direction: ltr;
 }
 
+/*  ---------- */
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form__input .form__body {
+  display: flex;
+  width: 100%;
+
+}
+
+.form__input .form__body .form__group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.form__input .form__body .form__group .control__header {
+  color: #0a325f;
+}
+
+
+.form__group .control__label {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  /*width: 35%;*/
+  /*background-color: #0a325f;*/
+  padding: 12px 3px !important;
+  border-radius: 10px !important;
+  color: #0a325f;
+  text-align: center;
+}
+
+.form__group .form__control {
+  width: 100%;
+  font-size: 16px !important;
+}
+
+.form__group .form__control .input__Form {
+  width: 100%;
+  padding: 10px 8px !important;
+  /*border-radius: 10px !important;*/
+  margin-right: 5px;
+  font-size: 16px !important;
+}
+
+input[type="text"], textarea, input[type="file"], input[type="time"], select {
+  font-size: 16px !important;
+  /*padding: 5px !important;*/
+  outline: none;
+  border: 0;
+  box-shadow: 1px 1px 3px rgba(192, 192, 192, 0.95);
+  resize: none;
+}
+
+input[type="text"]:focus, textarea:focus, input[type="file"]:focus, input[type="time"]:focus, select:focus {
+  outline: none;
+  border: 0;
+  box-shadow: 1px 1px 3px rgba(192, 192, 192, 0.95);
+}
+
+
+.Input_textarea {
+  margin-top: 20px !important;
+}
+
+.form__control {
+  position: relative;
+}
+
+.p_input__Form {
+  position: absolute;
+  left: 2px;
+  bottom: -35px;
+}
+
+
+.mt-repeater .mt-repeater-item:not(:nth-of-type(2)) {
+  border-top: 1px solid #ddd !important;
+  padding-top: 15px !important;
+  margin-top: 15px !important;
+  border-bottom: 0 !important;
+}
+
+.mt-repeater .mt-repeater-item:nth-of-type(2) {
+  border-top: 1px solid #ddd !important;
+  padding-top: 15px !important;
+  margin-top: 15px !important;
+  border-bottom: 0 !important;
+}
+
+/*btn__blue*/
+.btn__container {
+  margin: 0;
+}
+
+.form-group .btn__container {
+  padding: 0 0 15px 0 !important;
+  margin: 0 !important;
+  border-bottom: 1px solid silver;
+}
+
+.btn__container .btn__blue {
+  padding: 5px 20px;
+  text-align: center;
+  border: 1px solid #0a325f !important;
+  border-radius: 10px !important;
+  background-color: transparent;
+  font-size: 16px;
+  transition: all ease 0.3s;
+  color: #0a325f;
+}
+
+.btn__container .btn__blue:hover {
+  border: 1px solid transparent !important;
+  background-color: #0a325f;
+  color: white;
+}
+
+.formHeader {
+  margin-top: 15px !important;
+}
+
+.btn-danger {
+  border-radius: 10px !important;
+}
 
 /* ---------------- calender --------------- */
 
@@ -174,6 +306,22 @@ li {
   margin: 0 auto;
   color: white;
 }
+
+.li_date_parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2.3rem;
+  background-color: #ececec;
+  border-radius: 8px !important;
+  padding: 15px 10px !important;
+}
+
+.li_date_parent:not(:first-child) {
+  margin-top: 10px !important;
+}
+
 
 .li_date {
   display: flex;
