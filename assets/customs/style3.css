@@ -316,12 +316,18 @@ li {
   background-color: #ececec;
   border-radius: 8px !important;
   padding: 15px 10px !important;
+
 }
 
-.li_date_parent:not(:first-child) {
-  margin-top: 10px !important;
-}
+/*.li_date_parent:not(:first-child) {*/
+/*  margin-top: 10px !important;*/
+/*}*/
 
+.my-listDo_ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
 
 .li_date {
   display: flex;
