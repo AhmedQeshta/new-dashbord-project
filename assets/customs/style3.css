@@ -375,12 +375,69 @@ li {
   text-decoration: none;
 }
 
-/*1040px*/
+/* window > 2055px and   window<2200px*/
+@media (min-width: 2050px) and (max-width: 2600px) {
+  .my-listDo_ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+  }
+}
+
+
+/* window > 1750px and   window<1800px*/
+@media (min-width: 1750px) and (max-width: 1800px) {
+  .my-listDo_ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+  }
+}
+
+/*1200px*/
+@media (max-width: 1450px) {
+  .my-listDo_ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+}
+
+/*1150px*/
+@media (max-width: 1150px) {
+  .my-listDo_ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+}
+
+/*650px*/
+@media (max-width: 650px) {
+  .my-listDo_ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+
+
+  .my-listDo {
+    justify-content: center;
+  }
+}
+
+/*
+.my-listDo_ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+*/
 @media (max-width: 450px) {
   .container {
     width: 100%;
     height: auto;
-    background-color: white;
+    background-color: transparent;
     color: #bbb;
     display: flex;
     justify-content: center;
